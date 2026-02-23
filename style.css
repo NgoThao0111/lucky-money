@@ -1,0 +1,15 @@
+@font-face {
+  font-family: myFont;
+  src: url(./fonts/Bahianita-Regular.woff) format("woff");
+}
+
+body {
+ background-color: #97101a;
+}
+
+.curtain-up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
