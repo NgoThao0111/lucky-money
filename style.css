@@ -27,17 +27,33 @@ body {
 
 .flower-lantern-left {
     position: absolute;
-    top: 0px;
-    left: -35px;
-    width: 250px;
+    top: -5px;
+    left: -20px;
+    width: 140px;
     z-index: 2;
 }
 
 .flower-lantern-right {
     position: absolute;
-    top: 0px;
-    right: -30px;
-    width: 250px;
+    top: -5px;
+    right: -20px;
+    width: 140px;
     z-index: 2;
     transform: scaleX(-1);
+}
+
+.money {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    width: 80px;
+    z-index: 2;
+}
+
+.fan {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: 100px;
+    z-index: 2;
 }
