@@ -5,19 +5,39 @@
 
 body {
  background-color: #97101a;
+ overflow: hidden;
 }
 
 .curtain-up {
   position: absolute;
-  top: -50px;
+  top: -30px;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .curtain-down {
   position: absolute;
-  bottom: -50px;
+  bottom: -30px;
   left: 0;
   width: 100%;
   transform: scaleY(-1);
+  z-index: 1;
+}
+
+.flower-lantern-left {
+    position: absolute;
+    top: 0px;
+    left: -35px;
+    width: 250px;
+    z-index: 2;
+}
+
+.flower-lantern-right {
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    width: 250px;
+    z-index: 2;
+    transform: scaleX(-1);
 }
