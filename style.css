@@ -26,10 +26,6 @@ body {
   color: #ffd700;
 }
 
-.result-container {
-  display: none;
-}
-
 .title {
   font-size: 50px;
   margin-bottom: 30px;
@@ -48,4 +44,9 @@ body {
 .envelope {
   width: 60px;
   cursor: pointer;
+}
+
+#replay {
+    font-size: 30px;
+    cursor: pointer;
 }
