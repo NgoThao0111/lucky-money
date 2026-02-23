@@ -9,7 +9,15 @@ body {
 
 .curtain-up {
   position: absolute;
-  top: 0;
+  top: -50px;
   left: 0;
   width: 100%;
+}
+
+.curtain-down {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  transform: scaleY(-1);
 }
