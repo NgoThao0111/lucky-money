@@ -1,11 +1,18 @@
 @font-face {
-  font-family: myFont;
+  font-family: bahianita;
   src: url(./fonts/Bahianita-Regular.woff) format("woff");
 }
 
 body {
  background-color: #97101a;
  overflow: hidden;
+ font-family: bahianita, sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
 .curtain-up {
@@ -47,7 +54,7 @@ body {
     bottom: 15px;
     left: 10px;
     width: 80px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .fan {
@@ -55,5 +62,84 @@ body {
     bottom: 5px;
     right: 10px;
     width: 100px;
-    z-index: 2;
+    z-index: 3;
 }
+
+.content {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    z-index: 1;
+}
+
+.content {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  bottom: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-container,
+.result-container {
+  text-align: center;
+  color: #ffd700;
+}
+
+.result-container {
+  display: none;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.envelopes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.envelope {
+  width: 50px;
+  cursor: pointer;
+}
+
+.envelope.selected {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 15px gold);
+}
+
+
+.button-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button {
+  width: 200px;
+  transition: transform 0.2s ease;
+}
+
+.button-container:hover .button {
+  transform: scale(1.05);
+}
+
+.button-container {
+  font-size: 24px;
+  color: #fff8dc;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
